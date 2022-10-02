@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * @param array The array to remove the duplicates
  * @returns The array without duplicates
  * @example ```ts
@@ -8,5 +8,5 @@
  * ```
  */
 export function noDuplicates<T>(array: T[]): T[] {
-    return [...new Set(array)]
+  return [...new Set(array)];
 }

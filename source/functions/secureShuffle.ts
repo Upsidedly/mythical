@@ -31,7 +31,7 @@ export async function secureIShuffle<T>(array: T[]): Promise<T[]> {
  */
 export async function secureShuffle<T>(array: T[]): Promise<T[]> {
   const promises = [];
-  const arr2 = [...array]
+  const arr2 = [...array];
 
   for (let i = array.length - 1; i > 0; i--) {
     promises.push(secureRandomInRange(0, i));
