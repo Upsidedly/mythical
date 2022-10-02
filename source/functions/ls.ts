@@ -7,8 +7,8 @@ import fs from 'fs-extra';
  * @returns The array of files
  */
 export async function ls(path: string, regex?: RegExp) {
-  const files = await fs.readdir(path);
-  return regex ? files.filter((f) => regex.test(f)) : files;
+    const files = await fs.readdir(path);
+    return regex ? files.filter((f) => regex.test(f)) : files;
 }
 
 /**
@@ -18,6 +18,6 @@ export async function ls(path: string, regex?: RegExp) {
  * @returns The array of files
  */
 export function lsSync(path: string, regex?: RegExp) {
-  const files = fs.readdirSync(path);
-  return regex ? files.filter((f) => regex.test(f)) : files;
+    const files = fs.readdirSync(path);
+    return regex ? files.filter((f) => regex.test(f)) : files;
 }

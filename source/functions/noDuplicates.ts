@@ -8,5 +8,5 @@
  * ```
  */
 export function noDuplicates<T>(array: T[]): T[] {
-  return [...new Set(array)];
+    return [...new Set(array)];
 }

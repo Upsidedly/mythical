@@ -5,11 +5,11 @@
  * @returns the shuffled array
  */
 export function ishuffle<T>(array: T[]): T[] {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
 /**
@@ -19,10 +19,10 @@ export function ishuffle<T>(array: T[]): T[] {
  * @returns The clone shuffled array
  */
 export function shuffle<T>(array: T[]): T[] {
-  const a2 = [...array];
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a2[i], a2[j]] = [a2[j], a2[i]];
-  }
-  return a2;
+    const a2 = [...array];
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a2[i], a2[j]] = [a2[j], a2[i]];
+    }
+    return a2;
 }
