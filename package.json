@@ -1,13 +1,13 @@
 {
     "name": "mythical",
     "version": "1.0.0",
-    "description": "",
+    "description": "A library of helper and utility functions to make your developer workflow easier",
     "main": "lib/index.js",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": ["helpers", "utility"],
+    "author": "upsided",
+    "license": "AGPL-3.0-or-later",
     "scripts": {
-      "test": "echo \"No test implemented\""
+        "test": "echo \"No test implemented\""
     },
     "dependencies": {
         "@types/fs-extra": "^9.0.13",
