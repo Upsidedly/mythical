@@ -1,2 +1,7 @@
 lib/test.js
 source/test.ts
+.commitlintrc.json
+.gitignore
+.lintstagedrc.json
+.prettierrc.json
+.husky/
